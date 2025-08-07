@@ -80,25 +80,27 @@ This open-source project is a lightweight activity tracker that detects motion u
 → Go to Interface Options → Enable SPI → Reboot if prompted.
 
 Install required libraries:
+```bash
+   sudo apt-get update
+   sudo apt-get install -y python3-dev python3-pip libboost-python-dev libboost-thread-dev
 
-sudo apt-get update
-sudo apt-get install -y python3-dev python3-pip libboost-python-dev libboost-thread-dev
-
-git clone https://github.com/nRF24/RF24.git
-cd RF24
-sudo ./setup.py install
+   git clone https://github.com/nRF24/RF24.git
+   cd RF24
+   sudo ./setup.py install
+```
 Wire the NRF24L01 to the Pi.
 
 Run the Python script in /raspberry_receiver/receiver.py:
-
+```bash
 python3 receiver.py
-
+```
 📷 Example Output
+```bash
 Listening for messages...
 Received: IDLE
 Received: MOVING
 Received: IDLE
-
+```
 🙌 Contributions
 Feel free to fork, modify, and expand this project. Pull requests are welcome!
 Once you're ready, upload the project to GitHub under a repository name like `activity-tracker`.
