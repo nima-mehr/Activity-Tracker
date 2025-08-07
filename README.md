@@ -75,18 +75,19 @@ This open-source project is a lightweight activity tracker that detects motion u
 
 1. Enable SPI:
 
-   ```bash
-   sudo raspi-config
+```bash
+sudo raspi-config
+```
 → Go to Interface Options → Enable SPI → Reboot if prompted.
 
 Install required libraries:
 ```bash
-   sudo apt-get update
-   sudo apt-get install -y python3-dev python3-pip libboost-python-dev libboost-thread-dev
+sudo apt-get update
+sudo apt-get install -y python3-dev python3-pip libboost-python-dev libboost-thread-dev
 
-   git clone https://github.com/nRF24/RF24.git
-   cd RF24
-   sudo ./setup.py install
+git clone https://github.com/nRF24/RF24.git
+cd RF24
+sudo ./setup.py install
 ```
 Wire the NRF24L01 to the Pi.
 
